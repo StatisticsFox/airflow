@@ -11,7 +11,7 @@ with DAG(
 ) as dag:
     send_email_task = EmailOperator(
         task_id= 'send_email_task',
-        to='1234kimlove@naver.com',
-        subject="사랑이에게 보내는 메일!!",
-        html_content="이거 자동으로 메일 보내는거 실습 중인데 잘 가나? 사랑해!! 하투하투하투 바보 멍청이 똥개 해삼 말미잘 \n 이 메세지를 보면 사랑한다고 카톡으로 보내주세요! 안보면 내일 회사 지각함"
+        to='akfktl328@naver.com',
+        subject="작업 진행 현황 전달",
+        html_content="Airflow 작업을 완료했습니다."
     )
